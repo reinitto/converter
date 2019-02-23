@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/public/bg.png");
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#testui {
+  flex-basis: 40%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+#userstories {
+  flex-basis: 50%;
+  flex-grow: 2;
+  margin: 10px;
+  perspective: 50vh;
+}
+
+#userstories h3 {
+  text-align: center;
+}
+
+#userstories ol {
+  transform-style: preserve-3d;
+  transform: rotateY(-35deg);
+  width: 500px;
+  margin-left: 300px;
+  perspective: 20vh;
+}
+
+ol li {
+  transition-duration: 1s;
+  margin: 15px;
+  transform-origin: left;
+}
+
+.hover {
+  transform-style: preserve-3d;
+  transform: rotateY(10deg) scale(2) translateX(-50px);
+}
